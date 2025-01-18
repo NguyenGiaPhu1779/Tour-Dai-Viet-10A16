@@ -13,6 +13,49 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/logo.jpg">
     <style>
+        /* Thiết lập chung cho button */
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hiệu ứng khi hover vào button */
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Hình ảnh trong button */
+        .btn img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Hover vào ảnh sẽ làm mờ nhẹ */
+        .btn:hover img {
+            opacity: 0.85;
+        }
+
+        /* Tiêu đề bên dưới ảnh */
+        .btn h5 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        /* Hover vào button làm chữ thay đổi màu */
+        .btn:hover h5 {
+            color: #e74c3c;
+        }
+
         /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
